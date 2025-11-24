@@ -296,18 +296,23 @@ Este repositório inclui um script para gerar imagens visuais dos layouts dos an
 As imagens abaixo mostram a visualização atual dos layouts dos andares do Building 1:
 
 #### Subsolo
+
 ![Building 1 - Subsolo](./images/building-1-subsolo.png)
 
 #### Térreo
+
 ![Building 1 - Térreo](./images/building-1-terreo.png)
 
 #### 1º Andar
+
 ![Building 1 - 1º Andar](./images/building-1-1.png)
 
 #### 2º Andar
+
 ![Building 1 - 2º Andar](./images/building-1-2.png)
 
 #### 3º Andar
+
 ![Building 1 - 3º Andar](./images/building-1-3.png)
 
 ### Gerar Imagens Localmente

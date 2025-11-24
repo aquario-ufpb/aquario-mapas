@@ -26,6 +26,7 @@ centro-de-informatica/
 ```
 
 Cada arquivo de andar (`floor-*.ts`) contém:
+
 - `id`: Identificador único do andar
 - `name`: Nome do andar (ex: "3º Andar")
 - `level`: Nível do andar (0 = térreo, 1 = primeiro andar, -1 = subsolo)
@@ -48,6 +49,7 @@ centro-de-informatica/
 ```
 
 Cada arquivo de andar (`floor-*.ts`) contém um array de objetos `Room` com:
+
 - `id`: Identificador único (deve corresponder ao id no layout)
 - `location`: Nome da sala (ex: "CI 312")
 - `type`: Tipo da sala (ver tipos abaixo)
@@ -112,9 +114,9 @@ export const floor3: FloorLayout = {
       shapes: [
         {
           position: { x: 0, y: 0 },
-          size: { width: 55, height: 135 }
-        }
-      ]
+          size: { width: 55, height: 135 },
+        },
+      ],
     },
     // ... outras salas
   ],
@@ -145,6 +147,7 @@ export const rooms: Room[] = [
 ### 3. Exemplo Completo: Sala de Aula
 
 **Layout (`mapas/building-1/floor-1.ts`):**
+
 ```typescript
 {
   id: "ci-101",
@@ -158,6 +161,7 @@ export const rooms: Room[] = [
 ```
 
 **Metadata (`salas/building-1/floor-1.ts`):**
+
 ```typescript
 {
   id: "ci-101",
@@ -171,6 +175,7 @@ export const rooms: Room[] = [
 ### 4. Exemplo: Gabinete de Professor
 
 **Layout:**
+
 ```typescript
 {
   id: "ci-227",
@@ -184,6 +189,7 @@ export const rooms: Room[] = [
 ```
 
 **Metadata:**
+
 ```typescript
 {
   id: "ci-227",
@@ -197,6 +203,7 @@ export const rooms: Room[] = [
 ### 5. Exemplo: Laboratório de Pesquisa com Múltiplos Labs
 
 **Metadata:**
+
 ```typescript
 {
   id: "ci-313",
@@ -214,10 +221,12 @@ Os slugs em `labs` devem corresponder aos nomes dos arquivos JSON em `aquario-en
 As salas do tipo `lab-research` podem referenciar entidades do repositório `aquario-entidades` através do campo `labs`, que aceita um array de slugs de entidades.
 
 **Exemplo:**
+
 - Se existe `aquario-entidades/centro-de-informatica/lmi.json`, use o slug `"lmi"`
 - Se existe `aquario-entidades/centro-de-informatica/tril.json`, use o slug `"tril"`
 
 O sistema automaticamente:
+
 - Busca as informações da entidade pelo slug
 - Exibe o logo da entidade no mapa
 - Mostra os detalhes da entidade no modal de detalhes da sala
@@ -263,6 +272,7 @@ git push
 Para adicionar mapas de um novo prédio:
 
 1. Crie a estrutura de pastas em `mapas/` e `salas/`:
+
    ```
    centro-de-informatica/
    ├── mapas/
@@ -284,4 +294,3 @@ Se tiver dúvidas sobre como organizar os dados ou adicionar uma sala específic
 ---
 
 **Mantido pela comunidade Aquário UFPB** 🐟
-

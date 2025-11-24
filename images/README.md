@@ -1,0 +1,1 @@
+# Generated floor layout images

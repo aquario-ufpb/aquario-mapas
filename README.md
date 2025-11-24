@@ -287,6 +287,41 @@ Para adicionar mapas de um novo prédio:
 
 3. O sistema detectará automaticamente os novos prédios
 
+## 🖼️ Geração de Imagens dos Mapas
+
+Este repositório inclui um script para gerar imagens visuais dos layouts dos andares, facilitando a visualização e verificação dos mapas.
+
+### Gerar Imagens Localmente
+
+Para testar a geração de imagens localmente:
+
+```bash
+cd frontend/content/aquario-mapas
+npm install
+npm run generate-images:local
+```
+
+As imagens serão geradas em `generated-images/` e mostrarão:
+
+- Formas das salas com bordas
+- IDs das salas como labels
+- Dimensões do blueprint
+
+### Geração Automática
+
+O GitHub Actions gera automaticamente as imagens quando há mudanças nos arquivos de layout (`mapas/**`). As imagens são salvas em `images/` e commitadas automaticamente.
+
+### Estrutura das Imagens Geradas
+
+```
+images/
+├── building-1-subsolo.png
+├── building-1-terreo.png
+├── building-1-1.png
+├── building-1-2.png
+└── building-1-3.png
+```
+
 ## 📞 Dúvidas?
 
 Se tiver dúvidas sobre como organizar os dados ou adicionar uma sala específica, abra uma issue neste repositório ou entre em contato com a equipe do Aquário.

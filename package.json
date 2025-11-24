@@ -1,0 +1,16 @@
+{
+  "name": "aquario-mapas",
+  "version": "1.0.0",
+  "description": "Mapas dos prédios do Aquário UFPB",
+  "type": "module",
+  "scripts": {
+    "generate-images": "tsx scripts/generate-images.ts",
+    "generate-images:local": "tsx scripts/generate-images.ts --local"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "canvas": "^2.11.2",
+    "tsx": "^4.7.0",
+    "typescript": "^5.9.0"
+  }
+}

@@ -156,7 +156,7 @@ async function main(): Promise<void> {
   // Ensure output directory exists
   await mkdir(outputDir, { recursive: true });
 
-  const buildingId = "building-1";
+  const buildingId = "ci";
   const floorFiles = getFloorFiles();
 
   for (const floorFile of floorFiles) {

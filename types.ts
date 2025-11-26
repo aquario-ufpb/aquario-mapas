@@ -42,6 +42,23 @@ export type RoomShape = {
 // Base Room Interface
 // ============================================
 
+export type ProfessorSlug = string;
+
+export type Professor = {
+  /** Unique identifier (slug) */
+  id: ProfessorSlug;
+  /** Full display name */
+  name: string;
+  /** Optional department */
+  department?: string;
+  /** Optional SIGAA profile URL */
+  sigaa?: string;
+  /** Optional relative path to professor photo */
+  image?: string;
+  /** Optional assigned room */
+  room?: string;
+};
+
 export type BaseRoom = {
   /** Unique room identifier (e.g., "ci-312") */
   id: string;
@@ -78,7 +95,7 @@ export type LabResearch = {
 export type ProfessorOffice = {
   type: "professor-office";
   /** List of professors/teachers assigned to this room */
-  professors: string[];
+  professors: ProfessorSlug[];
 } & BaseRoom;
 
 export type InstitutionalOffice = {

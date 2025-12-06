@@ -16,26 +16,26 @@ export const rooms: Room[] = [
   {
     id: "ci-108",
     location: "CI 108",
-    type: "classroom",
-    description: "Sala de aula CI 108",
+    type: "shared-space",
+    description: "Copa Interna",
   },
   {
     id: "ci-109",
     location: "CI 109",
-    type: "classroom",
-    description: "Sala de aula CI 109",
+    type: "institutional-office",
+    description: "Coordenações de Graduação",
   },
   {
     id: "ci-110",
     location: "CI 110",
-    type: "classroom",
-    description: "Sala de aula CI 110",
+    type: "institutional-office",
+    description: "Assessoria de Projetos Estratégicos e Assessoria de Tecnologia",
   },
   {
     id: "ci-111",
     location: "CI 111",
-    type: "classroom",
-    description: "Sala de aula CI 111",
+    type: "institutional-office",
+    description: "Coordenação de Pós-Graduação e Assessoria de Gestão de Pessoas",
   },
   {
     id: "assesoria",
@@ -46,8 +46,9 @@ export const rooms: Room[] = [
   {
     id: "ci-112",
     location: "CI 112",
-    type: "classroom",
-    description: "Sala de aula CI 112",
+    type: "institutional-office",
+    description: "Departamentos (DSC, DI, DCC) e Assessorias (Adm, Fin, Planej)",
+    department: "DSC, DI, DCC",
   },
   {
     id: "corredor",

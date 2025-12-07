@@ -1,56 +1,45 @@
 import type { FloorLayout } from "../../../types";
 
 export const floor1: FloorLayout = {
-  id: "laser-1st-floor",
-  name: "1º Andar",
-  level: 1,
+  id: "laser-ground-floor",
+  name: "Térreo",
+  level: 0,
   blueprint: {
     width: 400,
-    height: 300,
+    height: 400,
   },
   rooms: [
     {
-      id: "laser-101",
-      shapes: [{ position: { x: 0, y: 0 }, size: { width: 100, height: 80 } }],
-    },
-    {
-      id: "laser-102",
-      shapes: [{ position: { x: 100, y: 0 }, size: { width: 100, height: 80 } }],
-    },
-    {
-      id: "laser-103",
-      shapes: [{ position: { x: 200, y: 0 }, size: { width: 100, height: 80 } }],
-    },
-    {
-      id: "laser-lab",
-      shapes: [{ position: { x: 300, y: 0 }, size: { width: 100, height: 150 } }],
-    },
-    {
-      id: "corredor-laser-1",
+      id: "corredor",
       shapes: [
-        { position: { x: 0, y: 80 }, size: { width: 300, height: 20 } },
-        { position: { x: 0, y: 200 }, size: { width: 400, height: 20 } },
+        { position: { x: 0, y: 120 }, size: { width: 140, height: 180 } },
+        { position: { x: 0, y: 300 }, size: { width: 40, height: 100 } },
+        { position: { x: 140, y: 120 }, size: { width: 195, height: 50 } },
       ],
     },
     {
-      id: "laser-104",
-      shapes: [{ position: { x: 0, y: 220 }, size: { width: 100, height: 80 } }],
+      id: "banheiro-feminino",
+      shapes: [{ position: { x: 40, y: 300 }, size: { width: 50, height: 100 } }],
     },
     {
-      id: "laser-105",
-      shapes: [{ position: { x: 100, y: 220 }, size: { width: 100, height: 80 } }],
+      id: "banheiro-masculino",
+      shapes: [{ position: { x: 90, y: 300 }, size: { width: 50, height: 100 } }],
     },
     {
-      id: "laser-106",
-      shapes: [{ position: { x: 200, y: 220 }, size: { width: 100, height: 80 } }],
+      id: "cebraspe",
+      shapes: [{ position: { x: 140, y: 170 }, size: { width: 65, height: 230 } }],
     },
     {
-      id: "banheiro-laser-1",
-      shapes: [{ position: { x: 300, y: 150 }, size: { width: 50, height: 50 } }],
+      id: "tns",
+      shapes: [{ position: { x: 205, y: 170 }, size: { width: 65, height: 230 } }],
     },
     {
-      id: "escada-laser-1",
-      shapes: [{ position: { x: 350, y: 150 }, size: { width: 50, height: 50 } }],
+      id: "syncro",
+      shapes: [{ position: { x: 270, y: 170 }, size: { width: 65, height: 230 } }],
+    },
+    {
+      id: "vsoft",
+      shapes: [{ position: { x: 335, y: 120 }, size: { width: 65, height: 280 } }],
     },
   ],
 };

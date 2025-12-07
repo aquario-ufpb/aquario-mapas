@@ -1,56 +1,49 @@
 import type { FloorLayout } from "../../../types";
 
 export const floor2: FloorLayout = {
-  id: "laser-2nd-floor",
-  name: "2º Andar",
-  level: 2,
+  id: "laser-1st-floor",
+  name: "1º Andar",
+  level: 1,
   blueprint: {
     width: 400,
-    height: 300,
+    height: 400,
   },
   rooms: [
     {
-      id: "laser-201",
-      shapes: [{ position: { x: 0, y: 0 }, size: { width: 120, height: 100 } }],
-    },
-    {
-      id: "laser-202",
-      shapes: [{ position: { x: 120, y: 0 }, size: { width: 120, height: 100 } }],
-    },
-    {
-      id: "laser-203",
-      shapes: [{ position: { x: 240, y: 0 }, size: { width: 80, height: 100 } }],
-    },
-    {
-      id: "laser-office",
-      shapes: [{ position: { x: 320, y: 0 }, size: { width: 80, height: 100 } }],
-    },
-    {
-      id: "corredor-laser-2",
+      id: "corredor",
       shapes: [
-        { position: { x: 0, y: 100 }, size: { width: 400, height: 20 } },
-        { position: { x: 0, y: 220 }, size: { width: 400, height: 20 } },
+        { position: { x: 0, y: 300 }, size: { width: 40, height: 100 } },
+        { position: { x: 140, y: 120 }, size: { width: 260, height: 50 } },
+        { position: { x: 40, y: 300 }, size: { width: 50, height: 100 } },
       ],
     },
     {
-      id: "laser-204",
-      shapes: [{ position: { x: 0, y: 240 }, size: { width: 100, height: 60 } }],
+      id: "area-lazer",
+      shapes: [{ position: { x: 0, y: 120 }, size: { width: 140, height: 180 } }],
     },
     {
-      id: "laser-205",
-      shapes: [{ position: { x: 100, y: 240 }, size: { width: 100, height: 60 } }],
+      id: "sala-copa",
+      shapes: [{ position: { x: 90, y: 300 }, size: { width: 50, height: 100 } }],
     },
     {
-      id: "laser-206",
-      shapes: [{ position: { x: 200, y: 240 }, size: { width: 100, height: 60 } }],
+      id: "sala-espera",
+      shapes: [{ position: { x: 140, y: 170 }, size: { width: 65, height: 115 } }],
     },
     {
-      id: "banheiro-laser-2",
-      shapes: [{ position: { x: 300, y: 100 }, size: { width: 50, height: 50 } }],
+      id: "sala-reuniao",
+      shapes: [{ position: { x: 140, y: 285 }, size: { width: 65, height: 115 } }],
     },
     {
-      id: "escada-laser-2",
-      shapes: [{ position: { x: 350, y: 100 }, size: { width: 50, height: 50 } }],
+      id: "sala-log",
+      shapes: [{ position: { x: 205, y: 170 }, size: { width: 65, height: 230 } }],
+    },
+    {
+      id: "sala-robotica",
+      shapes: [{ position: { x: 270, y: 170 }, size: { width: 65, height: 230 } }],
+    },
+    {
+      id: "sala-embarcados",
+      shapes: [{ position: { x: 335, y: 170 }, size: { width: 65, height: 230 } }],
     },
   ],
 };

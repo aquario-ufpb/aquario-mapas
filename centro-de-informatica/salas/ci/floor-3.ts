@@ -13,7 +13,7 @@ export const rooms: Room[] = [
     location: "CI 313",
     type: "lab-research",
     description: "Laboratório de Pesquisa",
-    labs: ["compose", "lia", "dat", "avis", "laqss"],
+    labs: ["compose", "lia", "datavis", "laqss"],
   },
   {
     id: "ci-314",
